@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>
+            Dev Lab
+        </title>
+        <link rel="stylesheet" type="text/css" href="navbar.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <style>
+    .container0 {
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .footer {
+    margin-top: 2539px;
+    background-color: #24262b;
+    padding: 70px 0;
+  }
+  
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #0ef;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;  
+  }
+
+  .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+  }
+
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(225, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+  }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+              <div class="group">
+              <a href="index.html" class="a">Dev Lab<span></span></a>
+              <a href="home.html" class="a">Home<span></span></a>
+              <a href="about.html" class="a">About<span></span></a>
+              <a href="register.html" class="a">Register<span></span></a>
+              <a href="contact.html" class="a">Contact<span></span></a> 
+              <div class="dropdown">
+                <span class="select">
+                    <span class="selected">More</span>
+                    <span class="caret"></span>
+                </span>
+                <ul class="menu">
+                    <li><a href="community.html" class="a1">Community</a></li>
+                    <li><a href="courses.html" class="a1">Courses</a></li>
+                    <li><a href="dashboard.html" class="a1">Dashboard</a></li>
+                    <li><a href="devshop.html" class="a1">Dev Shop</a></li>
+                    <li><a href="events.html" class="a1">Events</a></li>
+                  </ul>
+                </div>
+                <a href="#" onclick="toggleSearchBox()" class="a a2">Search<span></span></a>
+              <div class="searchBox" id="searchBox">
+                  <input type="text" placeholder="Search here">
+              </div>
+          </div>
+            </nav>
+          </header>
+          <main>
+            <div class="container">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+             <div class="title" align="center">
+                 <h1 class="heading">Welcome to <span class="typewriter" style="color: red;"></span></h1>
+                 <p id="detail">Connect, Collaborate, Showcase</p>
+                 <br>
+                 <form action="register.html">
+                    <button type="submit " class="button-30" id="getstarted">Get Started</button>
+                 </form>
+             </div>
+             <div id="divider1"></div>
+             <div class="characteristics">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 id="connectheading">Connect</h1>
+                <p id="connectdescripition">Take this chance and connect to others <br> 
+                    and make new friends and also showcase <br>
+                    your talent among your friends.</p>
+                <img src="1.png" id="connectimg" alt="Connect Image">
+             </div>
+             <div id="divider2"></div>
+             <div class="characteristics">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 id="collaborateheading">Collaborate</h1>
+                <p id="collaboartedescripition"> Want help from others? Don't worry here <br> 
+                    is collaboration with cool features to <br>
+                     discuss your issues. </p>
+                <img src="3.png" id="collaborateimg" alt="Collaborate Image">
+             </div>
+             <div id="divider2"></div>
+             <div class="characteristics">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 id="connectheading">Showcase</h1>
+                <p id="connectdescripition">Showcase your talet by your <br>
+                     projects on this biggest paltform <br>
+                     and get a chance to became popular.</p>
+                <img src="4.png" id="connectimg" alt="Talent Image">
+             </div>
+             <div id="divider2"></div>
+             <div class="faq">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 align="center" id="frequentlyheading">Frequently Asked Questions</h1>
+                <br>
+                <br>
+                    <div class="faq-item">
+                      <div class="question" onclick="toggleAnswer(this)">What is Dev Lab?</div>
+                      <div class="answer">Dev Lab is the biggest platform to give the chance to all the programmers and coders to 
+                        show their talent.They can make their projects and also sell them to others or loyal companies.We have a 
+                        special leaderboard if these projects were selected they will get money prize.Events are the most interesting
+                        thing on this platform for these coders.They can also discuss thier issues with others.If they are newbie courses 
+                        are available from popular coders and from the selected
+                      </div>
+                    </div>
+                
+                    <div class="faq-item">
+                      <div class="question" onclick="toggleAnswer(this)">Why do we use it?</div>
+                      <div class="answer">As in previous answer, it is the paltform to connect all the coders together with mind-blowing features.
+                        So it also become important to use our platform.
+                      </div>
+                    </div>
+
+                    <div class="faq-item">
+                      <div class="question" onclick="toggleAnswer(this)">Does it totally free?</div>
+                      <div class="answer">No, it is not free at all but major part is free like participating in events,dev shop and more.It 
+                        requires money in only small palns that can be affordable by all the users as this is paltform to connect all the coders.</div>
+                    </div>
+
+                    <div class="faq-item">
+                      <div class="question" onclick="toggleAnswer(this)">Does it is safe?</div>
+                      <div class="answer">Yes, it is totally safe and guaranteed.All the data you enter 
+                        remain safe and after 5 minutes it is deleted by our database to ensure your safety.
+                      </div>
+                    </div>
+
+                    <div class="faq-item">
+                      <div class="question" onclick="toggleAnswer(this)">Does it is safe for kids?</div>
+                      <div class="answer">Yes, it is safe for kids and as this is te time by which kids are 
+                        growing their interest in the field of technology so it is provide them a way to show
+                        their talent through the world.They do not requires money we provide them a special system
+                        in our platform so that they can take full advantages of our services and we also provide kid 
+                        time manager so that parent can be notified to set time according to which they can spend their time on 
+                        Dev Lab or it is set automatically.
+                      </div>
+                    </div>
+
+                    <div class="faq-item">
+                      <div class="question" onclick="toggleAnswer(this)">Is there any monitization?</div>
+                      <div class="answer">Yes,our platform has monitization system base on you project's reach and voting.
+                      </div>
+                    </div>
+
+                    <div class="faq-item">
+                      <div class="note">
+                        Check out our faq page for more questions and their answers.
+                      </div>
+             </div>
+            </div>
+           </main>
+           <footer class="footer">
+            <div class="container0">
+              <div class="row">
+                <div class="footer-col">
+                  <h4>Dev Lab</h4>
+                  <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Affiliate Programmes</a></li>
+                    <li><a href="#">About Users</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Get Help</h4>
+                  <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">MBF</a></li>
+                    <li><a href="#">Chat Bot</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Top Projects</h4>
+                  <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">MBF</a></li>
+                    <li><a href="#">Chat Bot</a></li>
+                  </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+           </footer>
+           <script src="index.js"></script>
+          <script>
+            function toggleSearchBox() {
+                const searchBox = document.getElementById('searchBox');
+                searchBox.classList.toggle('active');
+            }
+        </script>
+        <script>
+            function toggleAnswer(question) {
+              const answer = question.nextElementSibling;
+              answer.classList.toggle('active');
+            }
+          </script>
+    </body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .container0 {
+      max-width: 1170px;
+      margin: auto;
+    }
+    
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    ul {
+      list-style: none;
+    }
+    
+    .footer {
+      margin-top: 50px;
+      background-color: #24262b;
+      padding: 70px 0;
+      width: 1500px;
+    }
+    
+    .footer-col {
+      width: 25%;
+      padding: 0 15px;
+    }
+    
+    .footer-col h4 {
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+    }
+  
+    .footer-col h4::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: #0ef;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+    }
+  
+    .footer-col ul li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  
+    .footer-col ul li a {
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;  
+    }
+  
+    .footer-col ul li a:hover {
+      color: #ffffff;
+      padding-left: 8px;
+    }
+  
+    .footer-col .social-links a {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(225, 255, 255, 0.2);
+      margin: 0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+    }
+  
+    .footer-col .social-links a:hover {
+      color: #24262b;
+      background-color: #ffffff;
+    }
+  </style>
+   </head>
+<body>
+    <header>
+        <nav>
+          <div class="group">
+          <a href="index.html" class="a">Dev Lab<span></span></a>
+          <a href="home.html" class="a">Home<span></span></a>
+          <a href="about.html" class="a">About<span></span></a>
+          <a href="register.html" class="a">Register<span></span></a>
+          <a href="contact.html" class="a">Contact<span></span></a> 
+          <div class="dropdown">
+            <span class="select">
+                <span class="selected">More</span>
+                <span class="caret"></span>
+            </span>
+            <ul class="menu">
+                <li><a href="community.html" class="a1">Community</a></li>
+                <li><a href="courses.html" class="a1">Courses</a></li>
+                <li><a href="dashboard.html" class="a1">Dashboard</a></li>
+                <li><a href="devshop.html" class="a1">Dev Shop</a></li>
+                <li><a href="events.html" class="a1">Events</a></li>
+              </ul>
+            </div>
+            <a href="#" onclick="toggleSearchBox()" class="a a2">Search<span></span></a>
+          <div class="searchBox" id="searchBox">
+              <input type="text" placeholder="Search here">
+          </div>
+      </div>
+        </nav>
+      </header>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form name="Sign Up User Data" method="post" onsubmit="return validateForm()"> 
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="Enter your name" name="NAME" id="nameInput" required>
+              <span id="nameError" class="error"></span>
+            </div>
+            <div class="input-box">
+              <span class="details">Username</span>
+              <input type="text" placeholder="Enter your username" name="USERNAME" id="usernameInput" required>
+              <span id="usernameError" class="error"></span>
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="email" placeholder="Enter your email" name="E-MAIL" id="emailInput" required>
+              <span id="emailError" class="error"></span>
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="tel" placeholder="Enter your number" name="PHONE NUMBER" id="phoneInput" pattern="[0-9]{10}" required>
+              <span id="phoneError" class="error"></span>
+            </div>
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input type="password" id="password" placeholder="Enter your password" name="PASSWORD" required>
+              <span id="passwordError" class="error"></span>
+            </div>
+            <div class="input-box">
+              <span class="details">Gender</span>
+              <input type="text" id="password" placeholder="Enter your gender" name="GENDER" required>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" id="submitbtn" value="Register">
+          </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container0">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Dev Lab</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Affiliate Programmes</a></li>
+            <li><a href="#">About Users</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">MBF</a></li>
+            <li><a href="#">Chat Bot</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Top Projects</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">MBF</a></li>
+            <li><a href="#">Chat Bot</a></li>
+          </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+      </div>
+    </div>
+   </footer>
+
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwunvGD73Nhcx2HN8m52C5UNQuOaTGTLZl7jIBAiWjAjN4Jy_n2_Ii3tpRXPQ1qQmfG/exec'
+    const form = document.forms['Sign Up User Data']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Registering..!"))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+ <script>
+    function toggleSearchBox() {
+        const searchBox = document.getElementById('searchBox');
+        searchBox.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
